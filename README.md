@@ -19,7 +19,7 @@ x_N | y_N | z_N | vx_N | vy_N | vz_N | mass_N
 ---
 
 with x_1 denoting the x coördinate of particle 1 and vy_2 denoting the velocity in the y direction of particle 2 with tabs separating the values. An example of the style of this file can be found in input.txt.
-Note that the integration works in its own integration unit system where the gravitational constant G=1. To convert physical units to these units, follow either one of the approaches in the pdf document titled 'programmeereenheiden.pdf'
+Note that the integration works in its own integration unit system where the gravitational constant G=1. To convert physical units to these units, just solve for time in the units.
 
 2. Compiling:
 you should compile main.cpp to use this program, a suggested way of doing this is via navigating to this folder in bash/zsh/cmd/... and typing
