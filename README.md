@@ -4,8 +4,8 @@ How to use:
 
 1. Setting initial conditions:
 The initial conditions should be located in  a text file (e.g input.txt) and should follow the structure presented below.
----
-number of particles
+--- | --- | --- | --- |--- |--- |---
+number of particles||||||
 --- | --- | --- | --- |--- |--- |---
 x_1 | y_1 | z_1 | vx_1 | vy_1 | vz_1 | mass_1
 x_2 | y_2 | z_2 | vx_2 | vy_2 | vz_2 | mass_2
