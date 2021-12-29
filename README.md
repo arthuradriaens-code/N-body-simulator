@@ -4,15 +4,16 @@ How to use:
 
 1. Setting initial conditions:
 The initial conditions should be located in  a text file (e.g input.txt) and should follow the structure presented below.
-
+---
 number of particles
-x_1 y_1 z_1 vx_1 vy_1 vz_1 mass_1
-x_2 y_2 z_2 vx_2 vy_2 vz_2 mass_2
-x_3 y_3 z_3 vx_3 vy_3 vz_3 mass_3
+--- | --- | --- | --- |--- |--- |---
+x_1 | y_1 | z_1 | vx_1 | vy_1 | vz_1 | mass_1
+x_2 | y_2 | z_2 | vx_2 | vy_2 | vz_2 | mass_2
+x_3 | y_3 | z_3 | vx_3 | vy_3 | vz_3 | mass_3
 .
 .
 .
-x_N y_N z_N vx_N vy_N vz_N mass_N
+x_N | y_N | z_N | vx_N | vy_N | vz_N | mass_N
 
 
 with x_1 denoting the x coördinate of particle 1 and vy_2 denoting the velocity in the y direction of particle 2 with tabs separating the values. An example of the style of this file can be found in input.txt.
