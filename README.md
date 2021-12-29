@@ -4,9 +4,11 @@ How to use:
 
 1. Setting initial conditions:
 The initial conditions should be located in  a text file (e.g input.txt) and should follow the structure presented below.
---- | --- | --- | --- |--- |--- |---
-number of particles||||||
---- | --- | --- | --- |--- |--- |---
+
+
+number of particles
+x | y | z | vx | vy | vz | mass
+-- | -- | -- | -- | -- | -- | --
 x_1 | y_1 | z_1 | vx_1 | vy_1 | vz_1 | mass_1
 x_2 | y_2 | z_2 | vx_2 | vy_2 | vz_2 | mass_2
 x_3 | y_3 | z_3 | vx_3 | vy_3 | vz_3 | mass_3
@@ -14,7 +16,7 @@ x_3 | y_3 | z_3 | vx_3 | vy_3 | vz_3 | mass_3
 .
 .
 x_N | y_N | z_N | vx_N | vy_N | vz_N | mass_N
-
+---
 
 with x_1 denoting the x coördinate of particle 1 and vy_2 denoting the velocity in the y direction of particle 2 with tabs separating the values. An example of the style of this file can be found in input.txt.
 Note that the integration works in its own integration unit system where the gravitational constant G=1. To convert physical units to these units, follow either one of the approaches in the pdf document titled 'programmeereenheiden.pdf'
@@ -35,18 +37,23 @@ Upon starting the program you're prompted to enter the text file name in which y
 You choose by entering a number (1 to 3) and pressing enter. If integration is selected another prompt will show up to ask what integration method. If rk4-variable is selected a minimum and maximum delta is asked, this determines the number of timestep doubling that can happen if particles get close. 
 If any other integration scheme is selected you'll be prompted to enter the timestep manually. 
 The output of this program is of the form "integrationmethod.txt" e.g "verlet.txt" with the following structure:
-----------------------------------------------------------------------
+
 (EmptyLine)
+
 #number of particles
+
 #mass_1 mass_2 mass_3 ... mass_N
-time totalEnergy x_1 y_1 z_1 x_2 y_2 z_2 x_3 y_3 z_3 ... x_N y_N z_N
-time totalEnergy x_1 y_1 z_1 x_2 y_2 z_2 x_3 y_3 z_3 ... x_N y_N z_N
-time totalEnergy x_1 y_1 z_1 x_2 y_2 z_2 x_3 y_3 z_3 ... x_N y_N z_N
+
+time | totalEnergy | x_1 | y_1 | z_1 | x_2 | y_2 | z_2 | x_3 | y_3 | z_3 | ... | x_N | y_N | z_N
+-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+time1 | totalEnergy1 | x_1 | y_1 | z_1 | x_2 | y_2 | z_2 | x_3 | y_3 | z_3 | ... | x_N | y_N | z_N
+time2 | totalEnergy2 | x_1 | y_1 | z_1 | x_2 | y_2 | z_2 | x_3 | y_3 | z_3 | ... | x_N | y_N | z_N
+time3 | totalEnergy3 | x_1 | y_1 | z_1 | x_2 | y_2 | z_2 | x_3 | y_3 | z_3 | ... | x_N | y_N | z_N
 .
 .
 .
-tmax totalEnergy x_1 y_1 z_1 x_2 y_2 z_2 x_3 y_3 z_3 ... x_N y_N z_N
-----------------------------------------------------------------------
+tmax | totalEnergyFinal | x_1 | y_1 | z_1 | x_2 | y_2 | z_2 | x_3 | y_3 | z_3 | ... | x_N | y_N | z_N
+
 Where time and totalEnergy are updated at each step, but not indexed to avoid confusion with the indices of the particles. The rest of the variables are as in input.txt. The (EmptyLine) i.e a '\n' is an artefact of setprecision() and should be ignored.
 
 The main can be edited, for which the user is directed to the comments of each function and hpp file. Notably, there are some optional parameters in the six integrator functions.
