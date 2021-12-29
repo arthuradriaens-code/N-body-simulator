@@ -1,4 +1,4 @@
-This is a n-body simulation program which uses G=1, created by Arno Depoorter, Mathijs Vanrespaille, Silke Van der Schueren and Arthur Adriaens.
+This is a n-body simulation program which uses G=1, created by Arno Depoorter, Mathijs Vanrespaille, Silke Van der Schueren and Arthur Adriaens. There's also a plot.py file which can be used to plot the result but is not required.
 
 How to use:
 
