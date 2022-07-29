@@ -21,7 +21,7 @@ x_N | y_N | z_N | vx_N | vy_N | vz_N | mass_N
 with x_1 denoting the x coördinate of particle 1 and vy_2 denoting the velocity in the y direction of particle 2 with tabs separating the values. An example of the style of this file can be found in input.txt.
 Note that the integration works in its own integration unit system where the gravitational constant G=1. To convert physical units to these units, just solve for time in the units.
 
-Some nice systems can be found on online like
+Some nice systems can be found [online](http://three-body.ipb.ac.rs/) for example:
 
 https://user-images.githubusercontent.com/66306556/147673874-b1f1dae2-aca2-42a2-bb3a-5ba904f7ab68.mp4
 
@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/66306556/147673874-b1f1dae2-aca2-42a2-
 
 2. Compiling:
 you should compile main.cpp to use this program, a suggested way of doing this is via navigating to this folder in bash/zsh/cmd/... and typing
-"g++ -std=c++14 -Wall -O3 -o main main.cpp"
+"g++ -std=c++14 -Wall -O3 -o main main.cpp" (assuming you have [gnu's c compiler](https://gcc.gnu.org/) installed)
 After this an execution file should be created (.sh in linux/mac and .exe in windows). Which you can then drag and drop into the terminal and hit enter to run.
 Alternatively, the files can also be imported into a code editor such as Visual Studio Code and run there. 
 
