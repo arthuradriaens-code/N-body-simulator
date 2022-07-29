@@ -2,7 +2,7 @@ This is a n-body simulation program which uses G=1, created by Arno Depoorter, M
 
 How to use:
 
-1. Setting initial conditions:
+1. Setting initial conditions:\
 The initial conditions should be located in  a text file (e.g input.txt) and should follow the structure presented below.
 
 
@@ -27,18 +27,18 @@ https://user-images.githubusercontent.com/66306556/147673874-b1f1dae2-aca2-42a2-
 
 
 
-2. Compiling:
+2. Compiling:\
 you should compile main.cpp to use this program, a suggested way of doing this is via navigating to this folder in bash/zsh/cmd/... and typing
 "g++ -std=c++14 -Wall -O3 -o main main.cpp" (assuming you have [gnu's c compiler](https://gcc.gnu.org/) installed)
 After this an execution file should be created (.sh in linux/mac and .exe in windows). Which you can then drag and drop into the terminal and hit enter to run.
 Alternatively, the files can also be imported into a code editor such as Visual Studio Code and run there. 
 
-3. Using the program
+3. Using the program:\
 Upon starting the program you're prompted to enter the text file name in which you specified the initial conditions, here you just type in the filename without the extension (e.g input). After hitting enter you're asked to select what you want to do, the possible options are:
 
-1. integrate, 
-2. calculate energy errors in function of h and in function of the number of driver function evaluations for rk4 with variable timestep
-3. time the integrations as a function of a number of random placed particles
+    1. integrate
+    2. calculate energy errors in function of h and in function of the number of driver function evaluations for rk4 with variable timestep
+    3. time the integrations as a function of a number of randomly placed particles
 
 You choose by entering a number (1 to 3) and pressing enter. If integration is selected another prompt will show up to ask what integration method. If rk4-variable is selected a minimum and maximum delta is asked, this determines the number of timestep doubling that can happen if particles get close. 
 If any other integration scheme is selected you'll be prompted to enter the timestep manually. 
